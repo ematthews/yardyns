@@ -1,0 +1,22 @@
+# The following is a sample configuration file.
+# 
+# DO NOT PUT QUOTES AROUND ANY OF THE VALUES.
+# 
+[general]
+# AWS Access Key Information
+AWS_ACCESS_KEY_ID = MYKEYID
+AWS_SECRET_ACCESS_KEY = MYKEYVALUE
+
+# The number of seconds to wait until failing updates
+UPDATE_TIMEOUT = 60
+
+[route53]
+# The domain name that you wish to update
+ZONE = example.com
+
+# The host that should be updated, so myhostname would result
+# in a record like: myhostname.example.com
+HOSTNAME = myhostname
+
+# DNS Time to Live for the record entry
+TTL = 300
