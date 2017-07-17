@@ -27,7 +27,7 @@ def exit_error(message=None, exit_code=1):
 
 # Retrieve the IP address from a public site
 def what_is_my_ipv4():
-    public_ip_url = "http://jsonip.com"
+    public_ip_url = "https://api.ipify.org/?format=json"
     try:
         ip = json.load(urlopen(public_ip_url))['ip']
     except:
